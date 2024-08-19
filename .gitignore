@@ -1,0 +1,26 @@
+# Node modules directory
+node_modules/
+
+# Environment variable files
+.env
+
+# Log files
+*.log
+
+# Directory for packages
+.DS_Store
+
+# Ignore local environment settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore build output directories
+/dist
+/build
+/out
+
+# Ignore IDE and editor config files
+.vscode/
+.idea/
