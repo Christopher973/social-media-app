@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const makeRequest = axios.create({
-  baseURL: "http://localhost:8800/api",
+  baseURL: "http://api.social-media.christopher-marie-angelique.fr/api",
   withCredentials: true,
 });
