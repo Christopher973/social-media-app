@@ -32,7 +32,7 @@ app.use(cookieParser());
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "../client/public/upload");
+    cb(null, "../upload");
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + file.originalname);
@@ -51,6 +51,7 @@ app.use("/api/posts", postRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/likes", likeRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/uploads", express.static("uploads"));
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {

@@ -34,8 +34,9 @@ const Post = ({ post }) => {
           <MoreHorizIcon />
         </div>
         <div className="content">
-          <p>{post.description}</p>
-          <img src={"./upload/"+ post.img} alt="" />
+          <p>{post.description}</p> 
+          {/* <img src={"./upload/"+ post.img} alt="" /> */}
+          <img src={"https://api.social-media.christopher-marie-angelique.fr//uploads/" + post.img} alt="" />
         </div>
         <div className="info">
           <div className="item">
