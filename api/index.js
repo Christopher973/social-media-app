@@ -51,7 +51,7 @@ app.use("/api/posts", postRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/likes", likeRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/uploads", express.static("uploads"));
+app.use("/upload", express.static("upload"));
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
